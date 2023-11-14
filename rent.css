@@ -3,12 +3,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
+     
     .navbar {
         background-color:  rgb(235, 235, 255);
         color: #fff;
@@ -204,7 +199,7 @@ body {
             flex-direction: column;
         }
     
-        .btn3, .btn4, .btn5, .btn6 {
+        .btn3, .btn4, .btn5, .btn6,.buttone {
             width: 100%;
             margin: 10px 0;
         }
@@ -371,4 +366,228 @@ body {
     color: red;
     font-size: 22px;
     cursor: pointer;
+}
+
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+}
+
+.photo1 {
+    width: 1000px;
+}
+
+.photohalf {
+    width: 70%;
+    margin-left: 220px;
+}
+
+.photo2 {
+    width: 1000px;
+}
+
+.photoquarter {
+    height: 200px;
+    width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    .photo-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .photohalf,   
+    .photoquarter {
+        width: 60%;
+        margin-left: 100px;
+ 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .photo1,
+    .photo2 {
+        width: 100%;
+    }
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+    margin-left: 210px;
+}
+.content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+   margin-bottom: 100px;
+}
+.leftcontent{
+    width: 50%;
+    margin-left: 220px;
+    margin-top: 40px;
+}
+.amenities{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:67%;
+}
+.rightcontent{
+    width:50%;
+  
+}
+.card {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 30px auto;
+    padding: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    padding: 15px;
+    background-color: rgb(35, 35, 82);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.card-header p{
+    font-size: 14px;
+}
+
+.card-content {
+    padding: 13px;
+    background-color:  rgb(235, 235, 255);
+}
+
+.colour{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(229, 117, 158);
+}
+.colour1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(117, 139, 229);
+}
+.colour2{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(117, 229, 138);
+}
+.colour3{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(229, 216, 117);
+}
+.review{
+    display: flex; 
+    align-items: center;
+}
+.feedback{
+    margin-left: 40px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 5px;
+
+}
+.write{
+    margin-top: 10px;
+}
+.text{
+    margin-top: 30px;
+   margin-bottom: 20px;
+}
+.text input{
+    width: 95%;
+    border-radius: 5px;
+    background-color: white;
+    height: 30px;
+
+}
+.book{
+ width: 300px;
+ border-radius: 30px;
+ background-color: rgb(62, 138, 62);
+ height: 40px;
+ border: none;
+ color: white;
+ font-size: 17px;
+ cursor: pointer;
+}
+
+.book:hover{
+ background-color: rgb(105, 173, 105);
+}.book:active{
+ background-color: rgb(163, 197, 163);
+
+}
+.bookbtn{
+    margin: auto 250px ;
+    padding: auto;
+}
+@media screen and (max-width: 1000px){
+
+    .bookbtn {
+        margin:  auto 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .buttons {
+        display: flex;
+        flex-wrap: wrap ;
+        width: 100%;
+        margin: 10px 0;
+    }
+   
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftcontent {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .amenities {
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .rightcontent {
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .bookbtn {
+        margin:  auto 50px;
+    }
 }
