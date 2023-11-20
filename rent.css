@@ -349,6 +349,7 @@ body {
         background-color: rgb(16, 16, 43);
         color: #fff;
         padding: 30px 0;
+      
     }
     
     .footer-content {
@@ -646,9 +647,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 1560px;
+    width: 1500px;
 }
 .properties{
+    margin-left: 50px;
     margin-top: 150px;
     width: 230px;
     height: 30px;
@@ -664,7 +666,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 660px;
-    margin-left: 556px;
+    margin-left: 536px;
 }
 .infos{
   display: flex;
@@ -796,6 +798,7 @@ body {
         margin-left: 0;
         justify-content: center;
         text-align: center;
+        display: flex;
     }
 
     .userinput {
