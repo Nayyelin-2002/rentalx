@@ -47,7 +47,7 @@ let infos = [
                 type2 : "1 bathroom"
         },
 ]
-
+let infocard = document.querySelector(".infocard");
 function submitForm() {
         document.getElementById('optionsForm').submit();
     }
@@ -106,38 +106,94 @@ function changeheart() {
     }
     
   
-//     let changepass = document.getElementsByClassName("pass");
-//     let infocard = document.querySelector(".infocard");
+   
+   
     
-//     changepass.addEventListener("click", function () {
-//         console.log("leepl");
-//         infocard.innerHTML = `<div class="infos">
-//                          <div class="name">
-//                                     <div> 
-//                                             <input type="text" class="userinput" placeholder="Current password*"> 
-//                                     </div>
-//                             </div>
-//                             <div class="name">
-//                                     <div> 
-//                                             <input type="text" class="userinput" placeholder="New password*"> 
-//                                     </div>             
-//                             </div>
-//                             <div class="name">
-//                                     <div> 
-//                                             <input type="text" class="userinput" placeholder="Confirm password*"> 
-//                                     </div>
-//                             </div> 
-//                     </div>
-//                     <div class="infobutt">
-//                         <button id="update" type="submit">Update</button>
-//                     </div>`;
+   function changepassword() {
+      
+        infocard.innerHTML = `<div class="infos">
+                         <div class="name">
+                                    <div> 
+                                            <input type="text" class="userinput" placeholder="Current password*"> 
+                                    </div>
+                            </div>
+                            <div class="name">
+                                    <div> 
+                                            <input type="text" class="userinput" placeholder="New password*"> 
+                                    </div>             
+                            </div>
+                            <div class="name">
+                                    <div> 
+                                            <input type="text" class="userinput" placeholder="Confirm password*"> 
+                                    </div>
+                            </div> 
+                    </div>
+                    <div class="infobutt">
+                        <button class="updateinfo" type="submit" onclick="toupdate()">Update</button>
+                    </div>`;
     
-//         // Now that the button exists in the DOM, add the class
-//         let updatebutt = document.getElementById('update');
-//         updatebutt.classList.add('move');
-//     });
-    
+        // Now that the button exists in the DOM, add the class
+        let updatebutt = document.getElementById('update');
+        // updatebutt.classList.add('move');
+    };
+
+   
+   function editprofile(){
+        infocard.innerHTML = `<div class="infos">
+        <div class="name">
+          <div>
+            Name
+            <input
+              placeholder="Ethan*"
+              type="text"
+              name="name"
+              class="userinput"
+            />
+          </div>
+        </div>
+        <div class="name">
+          <div>
+            Email
+            <input
+              placeholder="ethan.kisu@gmail.com*"
+              type="text"
+              name="email"
+              class="userinput"
+            />
+          </div>
+        </div>
+        <div class="name">
+          <div>
+            PhNo
+            <input
+              placeholder="+66655293007*"
+              type="text"
+              name="phno"
+              class="userinput"
+              
+            />
+          </div>
+        </div>
+      </div>
+      <div class="infobutts">
+      <button class="chgpsw" onclick="changepassword()" type="button">Change password</button>
+      <button  class="updatebutton" type="submit">Update</button>
+    </div>
+      `;
+
+        
+    }
 
 
 
-
+    function toupdate(){
+        Swal.fire({
+          title: "Profile info will be updated",
+          showDenyButton: true,
+          showCancelButton: false,
+          denyButtonText: `Cancel`,
+          confirmButtonText: "confirm",
+          reverseButtons: true, 
+        })
+    }
+   

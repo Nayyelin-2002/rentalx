@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="rent.css">
         <link rel="stylesheet" href="userprofile.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
         <nav class="navbar">
                 <div class="logo">
-                    <h3><i class="fa-solid fa-hotel"></i> Rental  <span>X</span></h3>
+                   <a href="rent.html" class="logotag"><h3><i class="fa-solid fa-hotel"></i> Rental  <span>X</span></h3></a> 
                 </div>
                 <div class="menu-toggle">
                     <i class="fa-solid fa-bars"></i>
@@ -65,7 +66,7 @@
                 </div>    
                 </div>
                     <div class="infobutt">
-                        <a href="user.html"><button class="pass" type="button">Edit Profile</button></a>
+                        <button class="edit" type="button" onclick="editprofile()">Edit Profile</button>
                         <button id="update" type="submit">Log out</button>
                     </div>
                 </div>
