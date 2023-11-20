@@ -103,13 +103,30 @@ function changeheart() {
     }
     
   
-  
-    
-    
-    
-    
-    
-    
+let changepass   = document.querySelector(".pass");
+let infocard = document.querySelector(".infocard")
+changepass.addEventListener("click",function(){
+        console.log("leepl")
+        infocard.innerHTML  = `<div class="infos">
+                     <div class="name">
+                                <div> 
+                                        <input type="text" class="userinput" placeholder="Current password*"> 
+                                </div>
+                        </div>
+                        <div class="name">
+                                <div> 
+                                        <input type="text" class="userinput" placeholder="New password*"> 
+                                </div>             
+                        </div>
+                        <div class="name">
+                                <div> 
+                                        <input type="text" class="userinput" placeholder="Confirm password*"> 
+                                </div>
+                        </div> 
+                </div>
+                `
+                infocard.classList.add("changestyle")
+})
 
 
 

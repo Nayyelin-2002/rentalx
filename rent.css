@@ -785,3 +785,7 @@ body {
         margin-right: auto;
     }
 }
+.changestyle {
+    height: 400px; /* Adjust the height as needed */
+    transition: height 0.3s ease; /* Add transition for smooth height change */
+}

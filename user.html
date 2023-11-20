@@ -44,53 +44,35 @@
                 <button class="btn6"><i class="fa-solid fa-location-dot"></i> Map</button>
             </div>
             <div class="userinfo">
-             <div class="infocard">
-                <div class="infos">
-                
-                        <div class="name">
+                <div class="infocard">
+                    <form id="userForm" action="your-submit-url" method="post">
+                        <div class="infos">
+                            <div class="name">
                                 <div> Name
-                                        <input type="text" class="userinput"> 
+                                    <input type="text" name="name" class="userinput">
                                 </div>
-                        </div>
-                        <div class="name">
+                            </div>
+                            <div class="name">
                                 <div> Email
-                                        <input type="text" class="userinput"> 
+                                    <input type="text" name="email" class="userinput">
                                 </div>
-                                
-                        </div>
-                        <div class="name">
+                            </div>
+                            <div class="name">
                                 <div> PhNo
-                                        <input type="text" class="userinput"> 
+                                    <input type="text" name="phno" class="userinput" placeholder="Confirm password*">
                                 </div>
+                            </div>
                         </div>
-                       
+                        <div class="infobutt">
+                            <button class="pass" type="button">Change password</button>
+                            <button class="update" type="submit">Update</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="infobutt">  
-                    <button class="pass">Change password</button>
-                    <button class="update">Update</button>
-               </div>
-             </div>
-
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="footer">
+            
+      <div class="footer">
                 <div class="footer-content">
                     <div class="footer-section about">
                      <p>fb.com/renfolx.coth</p>
