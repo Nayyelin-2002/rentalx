@@ -221,7 +221,7 @@ body {
         background-color: #1e1919;
     }
 
-    .session{
+    .photocard{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -784,8 +784,4 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
-.changestyle {
-    height: 400px; /* Adjust the height as needed */
-    transition: height 0.3s ease; /* Add transition for smooth height change */
 }

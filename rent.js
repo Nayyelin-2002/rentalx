@@ -50,7 +50,7 @@ let infos = [
 
 
     
-let productContainer = document.getElementsByClassName(".photosessiion");
+let productContainer = document.querySelector(".photocard");
 
 infos.forEach((info) => {
    
@@ -105,6 +105,7 @@ function changeheart() {
   
 let changepass   = document.querySelector(".pass");
 let infocard = document.querySelector(".infocard")
+let userinputs = document.querySelector(".userinput")
 changepass.addEventListener("click",function(){
         console.log("leepl")
         infocard.innerHTML  = `<div class="infos">
@@ -124,8 +125,12 @@ changepass.addEventListener("click",function(){
                                 </div>
                         </div> 
                 </div>
+                <div class="infobutt">
+              
+                <button class="update" type="submit">Update</button>
+            </div>
                 `
-                infocard.classList.add("changestyle")
+                
 })
 
 
