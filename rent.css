@@ -53,14 +53,26 @@ body {
     
     .user-button button {
         font-weight: bold;
-        background-color: rgb(203, 203, 43);
+        background-color: rgb(240, 170, 19);
         color: #fff;
         border: none;
-        padding: 10px 20px;
-        border-radius: 50px;
+        /* padding: 10px 30px ; */
+        border-radius: 40px;
         cursor: pointer;
+        height: 45px;
+        padding-left: 50px;
+        padding-right: 26px;
+
     }
     
+    .user{
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        transform: translateX(44px);
+        /* transform: translate(2px) */
+    }
     /* Responsive Adjustments */
     @media (max-width: 768px) {
         .menu-toggle {
@@ -589,5 +601,187 @@ body {
 
     .bookbtn {
         margin:  auto 50px;
+    }
+}
+
+.userimg{
+    border-radius: 50%;
+    width: 140px;
+    height: 130px;
+}
+.username{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-top: 60px;
+}
+.userphoto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1560px;
+}
+.properties{
+    margin-top: 150px;
+    width: 230px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(240, 170, 19);
+    color: white;
+}
+.butts{
+    margin-bottom: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 660px;
+    margin-left: 556px;
+}
+.infos{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-top: 300px; */
+}
+.infocard{
+    padding: auto;
+    margin: auto;
+    width: 870px;
+    height: 300px;
+    background-color: rgb(229, 235, 241);
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
+.userinfo{
+    margin-left: 100px;
+
+}
+.name{
+    
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+}
+.userinput{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 400px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.infobutt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 270px;
+    margin-top: 40px;
+}
+.pass{
+    height: 35px;
+    width: 170px;
+    border-radius: 50px;
+    background-color: rgb(222, 207, 207);
+    border: none;
+    cursor: pointer;
+}
+.update{
+    height: 35px;
+    width: 170px;
+    border-radius: 40px;
+    background-color:rgb(84, 220, 84);
+    border: none;  
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .userphoto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .butts {
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-evenly;
+    }
+
+    .infocard {
+        width: 100%;
+    }
+
+    .name {
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .userinput {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infobutt {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .username {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .userphoto {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .butts {
+        margin-top:30px;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .infocard {
+        width: 100%;
+        height: 100%;
+    }
+    .infos{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .userinput {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infobutt {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

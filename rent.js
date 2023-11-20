@@ -50,7 +50,7 @@ let infos = [
 
 
     
-let productContainer = document.querySelector(".session");
+let productContainer = document.getElementsByClassName(".photosessiion");
 
 infos.forEach((info) => {
    
