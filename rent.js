@@ -48,15 +48,18 @@ let infos = [
         },
 ]
 
-
+function submitForm() {
+        document.getElementById('optionsForm').submit();
+    }
     
-let productContainer = document.querySelector(".photocard");
+let productContainer = document.querySelector(".photosession")
 
 infos.forEach((info) => {
    
         productContainer.innerHTML += `
+        
     <div class="product-card">
-    <img src="${info.img}" alt="Product Image">
+    <img src="${info.img}" alt="Product Image" class="homeimg">
     <div class="title">
     <h3 class="product-title">${info.name}</h3>
     <div class="bb">
@@ -103,35 +106,37 @@ function changeheart() {
     }
     
   
-let changepass   = document.querySelector(".pass");
-let infocard = document.querySelector(".infocard")
-let userinputs = document.querySelector(".userinput")
-changepass.addEventListener("click",function(){
-        console.log("leepl")
-        infocard.innerHTML  = `<div class="infos">
-                     <div class="name">
-                                <div> 
-                                        <input type="text" class="userinput" placeholder="Current password*"> 
-                                </div>
-                        </div>
-                        <div class="name">
-                                <div> 
-                                        <input type="text" class="userinput" placeholder="New password*"> 
-                                </div>             
-                        </div>
-                        <div class="name">
-                                <div> 
-                                        <input type="text" class="userinput" placeholder="Confirm password*"> 
-                                </div>
-                        </div> 
-                </div>
-                <div class="infobutt">
-              
-                <button class="update" type="submit">Update</button>
-            </div>
-                `
-                
-})
+//     let changepass = document.getElementsByClassName("pass");
+//     let infocard = document.querySelector(".infocard");
+    
+//     changepass.addEventListener("click", function () {
+//         console.log("leepl");
+//         infocard.innerHTML = `<div class="infos">
+//                          <div class="name">
+//                                     <div> 
+//                                             <input type="text" class="userinput" placeholder="Current password*"> 
+//                                     </div>
+//                             </div>
+//                             <div class="name">
+//                                     <div> 
+//                                             <input type="text" class="userinput" placeholder="New password*"> 
+//                                     </div>             
+//                             </div>
+//                             <div class="name">
+//                                     <div> 
+//                                             <input type="text" class="userinput" placeholder="Confirm password*"> 
+//                                     </div>
+//                             </div> 
+//                     </div>
+//                     <div class="infobutt">
+//                         <button id="update" type="submit">Update</button>
+//                     </div>`;
+    
+//         // Now that the button exists in the DOM, add the class
+//         let updatebutt = document.getElementById('update');
+//         updatebutt.classList.add('move');
+//     });
+    
 
 
 

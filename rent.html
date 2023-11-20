@@ -25,20 +25,36 @@
         </div>
     </div>
     </nav>
+    <!-- <form id="searchForm" action="your-submit-url" method="post">
     <div class="search-container">
-        <div class="search-bar">
-                <button class="search-button">
-                        <i class="fa fa-search"></i>
-                    </button>
-            <input type="text" placeholder="Location,City,Building...">
-         
-        </div>
-        <button class="custom-button">Search</button>
+       
+            <div class="search-bar">
+                
+        
     </div>
+</form> -->
+<form action="/dorms/search" method="POST">
+<div class="search-container">
+    <div class="search-bar">
+            <i class="fa fa-search" id="search-button"></i>
+     
+        <input type="text" name="search" placeholder="Location, City, Building...">
+    </div>
+    <button type="submit" class="custom-button">Search</button> 
+    </div>
+  </div>
+</form>
+    
     <div class="container">
         <h2 class="ads">Properties for Rent in Thailand</h2>
-        <button class="btn3"><i class="fa-solid fa-arrow-down-short-wide"></i> Filter & sort</button>
-        <button class="btn4"><i class="fa-solid fa-share" alt="copy link"></i> Share</button>
+        <form id="optionsForm" action="#" method="post">
+            <select id="options" name="options" class="options-dropdown" onchange="submitForm()">
+                <option value="option1"><a href="user.html">Price low to high</a></option>
+                <option value="option2"><a href="user.html">Price high to low</a></option>
+                <option value="option3"><a href="#">Location</a></option>
+            </select>
+        </form>
+
         <button class="btn5"><i class="fa-regular fa-heart"></i> Wishlist</button>
         <button class="btn6"><i class="fa-solid fa-location-dot"></i> Map</button>
     </div>
@@ -46,7 +62,7 @@
 <div>
         <h4 class="sort">Sort by Recommended</h4>
 </div>
-    <div class="photocard">
+    <div class="photosession">
    
     </div>
 
@@ -75,6 +91,8 @@
         </div>
     </div>
 </div>
+
+
 
 </body>
 <script src="rent.js"></script>
