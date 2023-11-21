@@ -63,6 +63,15 @@ body {
   padding-right: 26px;
 }
 
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  /* ... Other responsive adjustments ... */
+}
 .user {
   background-color: black;
   width: 50px;
@@ -71,6 +80,7 @@ body {
   transform: translateX(44px);
   /* transform: translate(2px) */
 }
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -249,7 +259,7 @@ input[type="text"] {
   flex-wrap: wrap;
 }
 .product-card {
-  margin-left: 120px;
+
   width: 300px;
   /* border: 1px solid #121111; */
   border-radius: 5px;
@@ -731,7 +741,7 @@ input[type="text"] {
     justify-content: space-between;
     width: 50%;
     margin-left: 250px;
-  margin-top: 40px;
+    margin-top: 40px;
  
 }
 .updateinfo{
@@ -754,16 +764,23 @@ input[type="text"] {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .userphoto {
     flex-direction: column;
     align-items: center;
   }
+  .pinfo{
+    margin-right: 150px;
+  }
 
-  .butts {
-    width: 100%;
+  .butts ,.properties{
+    display: flex;
+  margin-bottom: 30px;
+    margin-top: 30px;
+    /* flex-direction: column; */
     margin-left: 0;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
 
   .infocard {
@@ -786,8 +803,30 @@ input[type="text"] {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+   
   }
 }
+
+
+.move {
+  margin-left: 60px;
+}
+.edit {
+  height: 35px;
+  width: 170px;
+  border-radius: 50px;
+  background-color: rgb(222, 207, 207);
+  border: none;
+  cursor: pointer;
+}
+
+
+.homeimg {
+  width: 100%;
+  height: 50%;
+}
+
+/* ... Your existing CSS ... */
 
 @media screen and (max-width: 768px) {
   .username {
@@ -801,58 +840,108 @@ input[type="text"] {
     padding: 20px;
   }
 
-  .butts {
-    margin-top: 30px;
+  .properties{
+    margin-top: 10px;
     flex-direction: column;
     margin-left: 0;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .butts {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 80px; */
   }
 
-  .infocard {
+  
+  .user_infos {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .profileinfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    width: 100%; /* Full width */
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .userinfo-text {
+    /* margin-bottom: 10px; */
+    flex-basis: 100%; /* Full width on small screens */
+  }
+.userinfo{
+  margin-left: 50px;
+  width: 80%;
+  margin-top: 102px;
+}
+  #username {
+    font-size: 10px;
+  }
+  .infobutt {
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 10px;
+  }
+  .edit,
+  #update {
+    margin-right: 500px;
+    width: 30%; /* Full width for buttons on smaller screens */
+  }
+  .btn5,.btn6{
+    text-align: center;
+    margin-right: 150px;
+    width: 240px;
+   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .infocard {
     width: 100%;
     height: 100%;
-  }
-  .infos {
+  } */
+  /* .infos {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .name {
+  /* .name {
     margin-left: 0;
     justify-content: center;
     text-align: center;
     display: flex;
-  }
-
-  .userinput {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .infobutt {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.move {
-  margin-left: 60px;
-}
-.edit {
-  height: 35px;
-  width: 170px;
-  border-radius: 50px;
-  background-color: rgb(222, 207, 207);
-  border: none;
-  cursor: pointer;
-}
-
-.homeimg {
-  width: 100%;
-  height: 50%;
-}
+  } */
