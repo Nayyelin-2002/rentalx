@@ -172,6 +172,9 @@ input[type="text"] {
   margin-right: 120px;
 }
 
+
+
+
 .sort {
   margin-left: 140px;
 }
@@ -433,10 +436,15 @@ input[type="text"] {
 .photo2 {
   width: 1000px;
 }
-
+.ph2container{
+  display: flex;
+  flex-wrap: wrap;
+}
 .photoquarter {
   height: 200px;
   width: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {
