@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="rent.css">
+        <link rel="stylesheet" href="landlord.css">
+</head>
+<body>
+
+        <nav class="navbar">
+                <div class="logo">
+                    <a href="rent.html" class="logotag"><h3><i class="fa-solid fa-hotel"></i> Rental  <span>X</span></h3></a> 
+                </div>
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShOiYElieWi3Z9s0BBnHMlPIbLM2Yfs3iLnw&usqp=CAU" class="user" alt=""> 
+        
+                <div class="user-button">
+                    <a href="userprofile.html"><button>Ethan</button></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <button class="btn6"> Contact Us</button>
+                    </ul>
+                </div>
+            </div>
+            
+            </nav>
+
+
+            <div class="welcome">
+               <h1> Welcome Ethan!</h1>
+            </div>
+
+            <div>
+                <div class="CYP">
+                        <h1 class="create">
+                                Create your first Property Now!
+                        </h1>
+                        <div>
+                                <a href=""><button class="propertybtn">My Properties</button></a>
+                        </div>
+                </div>
+               
+            </div>
+
+
+
+            <div class="landlordcontainer">
+
+                <div class="landlordcard">
+                        <div class="inputs">
+                              <label for="">Property Name</label>
+                            <div>
+                                <input class="inp" type="text" placeholder="Property Name*">
+                            </div>
+                        </div>
+                          <div class="inputs">
+                                <label for="">City</label>
+                              <div>
+                                  <input class="inp" type="text" placeholder="City*">
+                              </div>
+                          </div>
+                          <div class="inputs">
+                                <label for="">Longitude</label>
+                              <div>
+                                  <input class="inp" type="text" placeholder="Longitude*">
+                              </div>
+                          </div>
+                          <div class="inputs">
+                                <label for="">Property's Description</label>
+                              <div>
+                                 <textarea class="area" placeholder="Property's Description" name="" id="" cols="71" rows="13"></textarea>
+                              </div>
+                          </div>
+                          <div class="inputs">
+                                <label for="">Price/Month</label>
+                              <div>
+                                  <input class="inp" type="text" placeholder="Price/Month*">
+                              </div>
+                          </div>
+                          <div class="inputs">
+                                <label for="">Deposit</label>
+                              <div>
+                                  <input class="inp" type="text" placeholder="Deposit*">
+                              </div>
+                          </div>
+                          <div class="inputs">
+                                <label for="">Line ID</label>
+                              <div>
+                                  <input class="inp" type="text" placeholder="Line ID*">
+                              </div>
+                          </div>
+                          <div  class="type">
+                                <div class="inputs">
+                                        <label for="">Number of Bedrooms</label>
+                                      <div>
+                                          <input class="typeinp" type="number" placeholder="Number of Bedrooms*">
+                                      </div>
+                                  </div>
+                                  <div class="inputs">
+                                        <label for="">Number of Bathrooms</label>
+                                      <div>
+                                          <input class="typeinp" type="number" placeholder="Number of Bathrooms*">
+                                      </div>
+                                  </div>
+                          </div>
+
+                          <div class="inputs">
+                                <label for="">Amenities</label>
+                              <div>
+                                 <textarea class="area" placeholder="Amenities*" name="" id="" cols="71" rows="5"></textarea>
+                              </div>
+                          </div>
+                          <div class="file-input-container">
+                                <label class="php" for="">Photos</label>
+                                <label for="fileInput" class="custom-input" id="customInputLabel">
+                                    Click here to upload photos
+                                    <input type="file" id="fileInput" class="hidden-input" onchange="updateFileName()">
+                                </label>
+                            </div>
+                            <div class="proceedbtn">
+                                <a href=""><button class="probtn">Proceed</button></a>
+                            </div>
+                </div>
+               
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                     <p>fb.com/renfolx.coth</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="footer-section links">
+                       
+                        <ul>
+                            <li><span>+66955344442</span></li>
+                            <li><span>contact@rentalx.co.th</span></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="footer-section contact">
+                        <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+</body>
+
+<script>
+        function updateFileName() {
+            const fileInput = document.getElementById('fileInput');
+            const customInputLabel = document.getElementById('customInputLabel');
+
+            if (fileInput.files.length > 0) {
+                // Get the name of the selected file
+                const fileName = fileInput.files[0].name;
+                
+                // Update the content of the label with the file name
+                customInputLabel.textContent = fileName;
+            } else {
+                // Reset the label content if no file is selected
+                customInputLabel.textContent = 'Upload File';
+            }
+        }
+    </script>
+</html>
