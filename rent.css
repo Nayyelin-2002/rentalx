@@ -710,7 +710,7 @@ input[type="text"] {
   justify-content: space-between;
   width: 400px;
   margin-left: 270px;
-  margin-top: 40px;
+  /* margin-top: 0px; */
 }
 .pass {
   height: 35px;
@@ -916,7 +916,109 @@ input[type="text"] {
 
 
 
+@media screen and (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .buttons,
+  .content,
+  .leftcontent,
+  .amenities,
+  .rightcontent,
+  .card,
+  .bookbtn,
+  .photo1,
+  .photo2,
+  .userphoto,
+  .butts,
+  .name,
+  .userinput,
 
+  .edit,
+  #update,
+  .move,
+  .btn5,
+  .btn6 {
+    width: 100%;
+    margin: 10px 0;
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+  .username{
+    margin-right: 140px;
+  }
+  .userphoto {
+    flex-direction: column;
+ 
+    align-items: center;
+  }
+
+  .properties,
+  .butts {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 140px;
+  }
+
+  .infocard {
+    width: 100%;
+    height: 350px;
+  }
+
+  .userinfo {
+    margin-left: 50px;
+    width: 80%;
+    margin-top: 102px;
+  }
+
+  #username {
+    font-size: 10px;
+  }
+
+  .infobutt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 10px;
+   /* margin-top: 110px; */
+  }
+
+  .edit,
+  #update {
+    margin-right: 550px;
+    width: 30%;
+    
+  }
+
+  .btn5,
+  .btn6 {
+    text-align: center;
+    margin-right: 150px;
+    width: 240px;
+  }
+}
 
 
 
