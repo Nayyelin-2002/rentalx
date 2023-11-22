@@ -133,30 +133,6 @@
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="footer">
                 <div class="footer-content">
                     <div class="footer-section about">
@@ -185,12 +161,13 @@
         function updateFileName() {
             const fileInput = document.getElementById('fileInput');
             const customInputLabel = document.getElementById('customInputLabel');
-
+                let custominput = document.querySelector(".custom-input")
             if (fileInput.files.length > 0) {
                 // Get the name of the selected file
                 const fileName = fileInput.files[0].name;
                 
                 // Update the content of the label with the file name
+                custominput.style.textContent = " ";
                 customInputLabel.textContent = fileName;
             } else {
                 // Reset the label content if no file is selected

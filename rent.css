@@ -576,6 +576,11 @@ input[type="text"] {
   background-color: white;
   height: 30px;
 }
+.cardcc {
+  max-height: 400px; /* Set a maximum height for the scroll bar to appear */
+  overflow-y: auto; /* Enable vertical scroll bar */
+}
+
 .book {
   width: 300px;
   border-radius: 30px;
