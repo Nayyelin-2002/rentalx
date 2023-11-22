@@ -62,8 +62,13 @@ body {
   padding-left: 50px;
   padding-right: 26px;
 }
+.user-button button:hover{
+  background-color:  rgb(225, 184, 96);
+}
 
-
+.user-button button:active{
+  background-color: rgb(155, 155, 78) ;
+}
 @media screen and (max-width: 600px) {
   .search-bar {
       width: 100%;
@@ -221,6 +226,12 @@ input[type="text"] {
   margin-left: auto;
   border: none;
   background-color: rgb(202, 221, 215);
+}
+.btn5:hover{
+  background-color: rgb(233, 220, 220);
+}
+.btn5:active{
+  background-color: rgb(222, 224, 223);
 }
 
 .btn6 {
@@ -675,6 +686,13 @@ input[type="text"] {
   border: none;
   background-color: rgb(240, 170, 19);
   color: white;
+  cursor: pointer;
+}
+.properties:hover{
+  background-color: rgb(216, 174, 82);
+}
+.properties:active{
+  background-color: rgb(245, 178, 33);;
 }
 .butts {
   margin-bottom: 30px;
@@ -920,7 +938,9 @@ input[type="text"] {
   }
 }
 
-
+.explore{
+  text-decoration: none;
+}
 
 
 
@@ -985,14 +1005,15 @@ input[type="text"] {
     align-items: center;
   }
 
-  .properties,
+
   .butts {
     display: flex;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    /* margin-top: 30px; */
     justify-content: center;
     align-items: center;
-    margin-right: 140px;
+    /* margin-right: 140px; */
+    
   }
 
   .infocard {

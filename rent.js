@@ -59,7 +59,7 @@ infos.forEach((info) => {
         productContainer.innerHTML += `
         
     <div class="product-card">
-    <img src="${info.img}" alt="Product Image" class="homeimg">
+    <a href="payment.html"> <img src="${info.img}" alt="Product Image" class="homeimg"></a>
     <div class="title">
     <h3 class="product-title">${info.name}</h3>
     <div class="bb">
